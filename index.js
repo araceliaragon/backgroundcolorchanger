@@ -7,10 +7,12 @@ $(document).ready(function(){
         colorIndex= colorIndex + 1;
         if(colorIndex==colors.length){
             colorIndex=0
-        for(var i=0; i<color.length; i=i+ 1){
-            console.log(color[i]);
-        }
         }
         
+        
     });
+    for(var i=0; i<colors.length; i=i+ 1){
+            $("#colorList").append("<li>"+colors[i]+"</li>");
+            console.log(colors[i]);
+        }
 });
